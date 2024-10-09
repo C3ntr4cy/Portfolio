@@ -53,8 +53,8 @@ button {
     border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    cursor: pointer; /* Change cursor to pointer for buttons */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .email {
@@ -62,7 +62,7 @@ button {
 }
 
 .email:hover {
-    background-color: rgb(120, 255, 120); /* Lighten the background on hover */
+    background-color: rgb(120, 255, 120);
 }
 
 .ublock {
@@ -70,7 +70,7 @@ button {
 }
 
 .ublock:hover {
-    background-color: rgb(255, 100, 100); /* Lighten the background on hover */
+    background-color: rgb(255, 100, 100);
 }
 
 .librewolf {
@@ -78,7 +78,7 @@ button {
 }
 
 .librewolf:hover {
-    background-color: rgb(80, 255, 255); /* Lighten the background on hover */
+    background-color: rgb(80, 255, 255);
 }
 
 .monero {
@@ -86,7 +86,7 @@ button {
 }
 
 .monero:hover {
-    background-color: rgb(200, 60, 60); /* Lighten the background on hover */
+    background-color: rgb(200, 60, 60);
 }
 
 .codeberg {
@@ -94,7 +94,7 @@ button {
 }
 
 .codeberg:hover {
-    background-color: #1590e3; /* Lighten the background on hover */
+    background-color: #1590e3;
 }
 
 .github {
@@ -103,7 +103,7 @@ button {
 }
 
 .github:hover {
-    background-color: #333; /* Darken the background on hover */
+    background-color: #333;
 }
 
 ::-webkit-scrollbar {
