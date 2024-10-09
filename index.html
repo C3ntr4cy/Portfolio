@@ -1,71 +1,155 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <title>C3</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="title">C3</h1>
-    <h1 class="subtitle"> Hi, my name is C3! tl;dr: 
-        I am a 15 year old software developer, 
-        cybersecurity enthusiast, and privacy activist.
-    </h1>
-    <div class="boxed" id="About">
-        <h2 class="secthead">About Me</h2>
-        <p>
-            I am a new front end software developer, so I know my way 
-            around HTML, but not yet CSS or JS. I am also attempting 
-            to learn Python at school, but it's not going well so far.
-        </p>
-        <p>
-            Backend Development is an area I am slowly working on, and
-            a field I am trying to get into. I am learning Node, Express, 
-            Mongo, and attempting to find more.
-        </p>
-        <p>
-            Apart from web development, I mess around with my friends
-            playing a wide variety of games on Roblox and Minecraft.
-        </p>
-        <p>
-            Privacy is a big deal to me, so I support organizations like
-            the <a href="https://signal.org">Signal Foundation</a>, the 
-            <a href="https://EFF.org">EFF</a>, the <a href="https://torproject.org">Tor Project</a>,
-            the <a href="https://ccs.getmonero.org/">Monero Project</a>, 
-            and <a href="https://www.fightforthefuture.org/">Fight for the Future</a>.
-        </p>
-        <p>
-            Cybersecurity and exploit hunting are some fields I am learning. I haven't participated 
-            in a responsible disclosure program with <a href="https://hackerone.com/">HackerOne</a>
-            yet, and hope to do one soon.
-        </p>
-    </div>
-    <div class="boxed" id="projects">
-        <h1 class="secthead">Projects</h1>
-        <p><a href="https://example.com">Placeholder</a>: Placeholder Description</p>
-        <p><a href="https://example.com">Placeholder</a>: Placeholder Description</p>
-        <p><a href="https://example.com">Placeholder</a>: Placeholder Description</p>
-        <p><a href="https://example.com">Placeholder</a>: Placeholder Description</p>
-        <p><a href="https://example.com">Placeholder</a>: Placeholder Description</p>
-    </div>
-    <div class="boxed" id="Socials">
-        <h2 class="secthead">Buttons</h2>
-        <p>I guess we doin Rounded buttons.</p>
-        <button class="email" onclick="window.open('mailto:c3ntr4cy@gmail.com')">Email Me</button>
-        <button class="ublock" onclick="window.open('https://ublockorigin.com/')">uBlock Origin</button>
-        <button class="librewolf" onclick="window.open('https://librewolf.net/')">LibreWolf</button>
-        <button class="monero" onclick="window.open('https://www.getmonero.org/')">Monero</button>
-        <button class="codeberg" onclick="window.open('https://codeberg.org/Centracy')">Codeberg</button>
-        <button class="github" onclick="window.open('https://github.com/C3ntr4cy?tab=repositories')">GitHub</button>
-    </div>
-    <div id="footer">
-        <p>Made with 💙 by C3.</p>
-        <p>
-            <a href="privacy.html">Privacy Policy</a> / 
-            <a href="credits.html">Credits</a> / 
-            <a href="extra.html">Extra Tools</a> / 
-            <a href="https://example.com/">Blog</a> / 
-            <a href="contact.html">Contact</a>
-        </p>
-    </div>
-</body>
-</html>
+body {
+    background-color: rgb(45, 45, 45);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    color: rgb(184, 171, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title {
+    background: linear-gradient(to right, #dab3ff, #54ddff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.secthead {
+    font-size: 17.5px;
+}
+
+.boxed {
+    background-color: rgb(70, 70, 70);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 625px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-color: invisible;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.email {
+    background-color: rgb(159, 255, 159);
+}
+
+.email:hover {
+    background-color: rgb(120, 255, 120); /* Lighten the background on hover */
+}
+
+.ublock {
+    background-color: rgb(255, 134, 134);
+}
+
+.ublock:hover {
+    background-color: rgb(255, 100, 100); /* Lighten the background on hover */
+}
+
+.librewolf {
+    background-color: rgb(109, 255, 255);
+}
+
+.librewolf:hover {
+    background-color: rgb(80, 255, 255); /* Lighten the background on hover */
+}
+
+.monero {
+    background-color: orangered;
+}
+
+.monero:hover {
+    background-color: rgb(200, 60, 60); /* Lighten the background on hover */
+}
+
+.codeberg {
+    background-color: #1b87d2;
+}
+
+.codeberg:hover {
+    background-color: #1590e3; /* Lighten the background on hover */
+}
+
+.github {
+    background-color: black;
+    color: white;
+}
+
+.github:hover {
+    background-color: #333; /* Darken the background on hover */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(45, 45, 45);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #dab3ff, #b3daff);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #b3daff, #dab3ff);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+body {
+    scrollbar-color: #dab3ff #454545;
+    scrollbar-width: thin;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.text-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.text-link-container p {
+    margin-right: 5px;
+}
